@@ -1,0 +1,26 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Git Pull') {
+            steps {
+               echo 'Source code pulled successfully'
+            }
+       } 
+       stage('Build') {
+           steps {
+               echo 'source code build successfully'
+           }
+       }
+       stage('Test') {
+           steps {
+               echo'source doce test successfully'
+           }
+       }
+       stage('Deploy') {
+           steps {
+               echo 'source code deploy successfully'
+           }
+       }
+    }
+}
